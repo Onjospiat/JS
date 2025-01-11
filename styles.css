@@ -1,32 +1,13 @@
 *{
     box-sizing: border-box;
 }
-div{
+/* div{
     height: 150px;
     font-size:clamp(20px,5vw,50px)
-}
-#left {
-    background-color: #2196F3;
-    padding: 20px;
-    float: left;
-    width: 20%; 
-  }
-  
-#middle {
-    background-color: #f1f1f1;
-    padding: 20px;
-    float: left;
-    width: 60%; 
-  }
-  
-#right {
-    background-color: #04AA6D;
-    padding: 20px;
-    float: left;
-    width: 20%; 
-  }
+} */
+
 #header{
-    background-color: black;
+    background-color: darkblue;
     color: white;
     text-align: center;
 }
@@ -36,19 +17,12 @@ div{
     font-size: clamp(20px, 5vw, 50px);
     background-color:#5f9ea0;
 }
-p{
-    margin: 10px;
-}
 
 a{
     border: 3px solid whitesmoke;
     margin: 3%;
     color:whitesmoke;
-    text-decoration: none;
-    line-height: 300%;
-    font-family: "Lobster", serif;
-    box-shadow: 3px 4px black;
-    
+    text-decoration: none;       
 }
 
 .nav a:hover{
@@ -60,17 +34,10 @@ a{
 }
 
 @media screen and (max-width:600px){
-    #left,#middle,#right,#menu{
-        width:100%;
-    }
-    
-    #header{
-        display: none;
-    }
-
     .nav a.icon{
         float:right;
         display: block;
+        background-color: #5f9ea0;
     }
 
     .nav a{
@@ -95,17 +62,6 @@ a{
         right:0;
         top:0;
         background-color: #5f9ea0;
-    }
-}
-
-@media screen and (max-width:1000px){
-    #header{
-        height:50px;
-    }
-    #left,#middle,#right,#menu{
-        width:100%;
-    }
-    h1{
-        font-size: clamp(3vw,5vw,8vw);
+        color:whitesmoke;
     }
 }
